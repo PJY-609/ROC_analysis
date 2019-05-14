@@ -52,6 +52,12 @@ def loadROI(ROI_path):
     roi = data['arr_0'].all()
     return roi
 
+def findRoiIndex(roi):
+    roi_index=[]
+    for i in roi.keys():
+        if roi[i]:
+            roi_index.append(i)
+    return roi_index
 
 def loadImage(df, content, patient):
     df_temp = df[(df.Series_Description==content) & (df.Patient_ID==patient)].reset_index()
