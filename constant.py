@@ -4,12 +4,15 @@ Created on Thu May  9 11:45:55 2019
 
 @author: yujue
 """
-PATH = 'F:/data_Perfusion'
-path_bSVD = '/CTP/bSVD'
-path_ROI = '/ROI'
+PATH = {'base': 'F:/data_Perfusion',
+        'bSVD': '/CTP/bSVD',
+        'ROI':  '/ROI',
+        'CT':  '/ROI',
+        'sSVD': '/CTP/sSVD'
+        }
 
 ITER = 10
 
 INTERVALS ={
-        'MTT-bSVD': [1, 20]
+        'MTT2-bSVD': [2, 14]
         }
